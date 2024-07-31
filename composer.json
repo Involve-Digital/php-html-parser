@@ -1,5 +1,5 @@
 {
-    "name": "paquettg/php-html-parser",
+    "name": "involve-digital/php-html-parser",
     "type": "library",
     "description": "An HTML DOM parser. It allows you to manipulate HTML. Find tags on an HTML page with selectors just like jQuery.",
     "keywords": ["html", "dom", "parser"],
@@ -13,7 +13,7 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": ">=8.0",
         "ext-mbstring": "*",
         "paquettg/string-encode": "~1.0.0",
         "ext-zlib": "*",
@@ -27,7 +27,7 @@
         "phan/phan": "^2.4"
     },
     "autoload": {
-        "psr-4": { 
+        "psr-4": {
         	"PHPHtmlParser\\": "src/PHPHtmlParser"
        	}
     }
