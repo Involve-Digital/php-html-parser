@@ -449,7 +449,7 @@ abstract class AbstractNode
      * @return mixed|Collection|null
      * @throws ChildNotFoundException
      */
-    public function find(string $selector, int $nth = null, bool $depthFirst = false)
+    public function find(string $selector, ?int $nth = null, bool $depthFirst = false)
     {
         $selector = new Selector($selector, new SelectorParser());
         $selector->setDepthFirstFind($depthFirst);
@@ -517,7 +517,7 @@ abstract class AbstractNode
      *
      * @return boolean
      */
-    public function isTextNode(): bool 
+    public function isTextNode(): bool
     {
 
         return false;

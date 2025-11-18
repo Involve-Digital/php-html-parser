@@ -103,7 +103,7 @@ final class StaticDom
      * @throws CurlException
      * @throws StrictException
      */
-    public static function loadFromUrl(string $url, array $options = [], CurlInterface $curl = null): Dom
+    public static function loadFromUrl(string $url, array $options = [], ?CurlInterface $curl = null): Dom
     {
         $dom       = new Dom;
         self::$dom = $dom;

@@ -191,7 +191,7 @@ class Dom
      * @throws CurlException
      * @throws StrictException
      */
-    public function loadFromUrl(string $url, array $options = [], CurlInterface $curl = null): Dom
+    public function loadFromUrl(string $url, array $options = [], ?CurlInterface $curl = null): Dom
     {
         if (is_null($curl)) {
             // use the default curl interface
@@ -254,7 +254,7 @@ class Dom
      * @throws ChildNotFoundException
      * @throws NotLoadedException
      */
-    public function find(string $selector, int $nth = null)
+    public function find(string $selector, ?int $nth = null)
     {
         $this->isLoaded();
 
